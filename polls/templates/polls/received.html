@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<a href=""
+    <div class="text-primary">
+    <div class="fixed-top p-3 mb-2 bg-primary text-white"> Home | List | Why Suggest? | About Me | Help </div>
+</a>
+
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Suggested Questions Master List</h1>
+        <p class="lead">Here are all of the suggestions that users have submitted!</p>
+    </div>
+ 
+{% for suggestion in suggestion_list %}
+<ul class="list-group">
+    <li class="list-group-item list-group-item-active">Name: {{suggestion.name}} &nbsp; | &nbsp; Suggestion: {{suggestion.suggestion_text}}</li>
+    </ul>
+{% endfor %}
+
+
+<div class="text-primary">
+    <div class="fixed-bottom p-3 mb-2 bg-primary text-white"> Created By Ben Phillips - 2020   |  CS3240  |  Assignment: Django Practice | Copywrite: Benjamin Phillips</div>
+</div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
